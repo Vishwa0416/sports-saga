@@ -1,0 +1,40 @@
+<html>
+    <head>
+      <title>Join us</title>
+        <link rel="stylesheet" href="Joinusstyle.css">
+        <link rel="icon" href="./logo.jpg" type="jpg">
+        </head>
+
+<form action="action_page.php" method="post" >
+    <div class="imgcontainer">
+      <img src="logo.jpg" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+
+      <input id="name" type="text" placeholder="Enter First name">
+      <input type="text" placeholder="Enter Last name">
+      <input type="text" placeholder="Contact Number">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Password">
+      <input type="text" placeholder="Confirm Password">
+      <button id="btn" type="submit">Signup</button>
+      <div><input type="checkbox" name="remember"> Remember me</div>
+      <div><button type="reset" class="cancelbtn">Cancel</button></div>
+        
+      
+      
+        
+
+      
+    </div>
+  </form>
+  <Script>
+    
+    var btn=document.getElementById('btn')
+    btn.addEventListener('click',function(){
+      var name=document.getElementById('name').value;
+      alert(name+',Your Response has been Recorded Successfully.')
+    })
+  </Script>
+  </html>
